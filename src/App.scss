@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+$heading: "Dela Gothic One", sans-serif;
+$body: "Roboto", sans-serif;
+$dark: #1e1e1e;
+$primary: #BDC1E5;
+$light: #f3f3f3;
+$secondary: #5D7865;
+
+.App {
+  display: flex;
+  font-family: $body;
+}
+#logo{
+  text-align: right;
+  margin-right: 30px;
+}
+#menu-items{
+  list-style: none;
+  line-height: 50px;
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+#social-items{
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+}
+.sidebar{
+  background-color: $dark;
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+}
+.main{
+  background-color: $light;
+  width: 100vw;
+  margin-left: 280px;
+}
+
+.light-body-text{
+  font-size: 16px;
+  color: $light;
+
+}
+.dark-body-text{
+  font-size: 14px;
+  color: $dark;
+}
+.project-card-text-heading{
+  font-family: $heading;
+  font-size: 24px;
+}
+.dark-heading-small-text{
+  font-family: $heading;
+  color: $dark;
+  font-size: 18px;
+}
+.section-heading-text{
+  font-size: 64px;
+  font-family: $heading;
+  color: $dark;
+  margin-left: 60px;
+  margin-top: 140px;
+}
+.logo-header{
+  color: $primary;
+  font-size: 24px;
+  font-family: $heading;
+  
+}
+#welcome-section{
+  background-color: $primary;
+  padding-bottom: 40px;
+  background-image: url(../public/brick-wall-dark.png);
+  
+}
+.cta{
+  text-decoration: none;
+  color: $light;
+}
+.heading{
+  color: $primary;
+}
+.welcome-msg{
+  line-height: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#welcome-text{
+  background-color: $light;
+  width: 580px;
+  padding: 60px;
+  margin-left: 60px;
+  border-radius: 0 0 10px 10px;
+}
+h1{
+  font-size: 80px;
+  font-family: $heading;
+  margin: 0;
+  margin-top: -20px;
+  color: $dark;
+  
+}
+.button{
+  width: max-content;
+  padding: 12px 40px 12px 40px;
+  background-color: $secondary;
+  border-radius: 35px;
+  color: $light;
+}
+.button-outline{
+  width: max-content;
+  padding: 12px 40px 12px 40px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $secondary;
+  border-radius: 35px;
+  color: $secondary;
+}
+hr{
+  height: 3px;
+}
+#infobar{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 60px;
+  border-radius: 10px;
+  background-color: $dark;
+  opacity: 80%;
+  text-align: center;
+  width: 705px;
+  justify-content: center;
+}
+#info{
+  margin-left: 40px;
+  font-weight: bold;
+  color: $light;
+}
+.info-large-text{
+  font-size: 36px;
+  
+}
+#skill-cards{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  gap: 20px;
+}
+.skill-header{
+  margin: 0;
+  
+  background-color: $dark;
+  font-size: 36px;
+  font-family: $heading;
+  color: $light;
+  text-align: center;
+  
+}
+#skill-title{
+  padding: 0 10px 0 10px;
+}
+.card{
+  background-color: $primary;
+  border-radius: 10px;
+  
+}
+.card-text{
+  padding: 10px;
+  text-align: center;
+}
+#divider{
+  background-color: $dark;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 60px 0;
+}
+#divider-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question{
+  font-family: $heading;
+  color: $primary;
+  font-size: 36px;
+  margin-left: 60px;
+}
+.answer{
+  width: 65%;
+  color: $light;
+}
+
+#project-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  place-content: center;
+  max-width: 1200px;
+  
+}
+
+
+.text{
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ 
+  color: $light;
+  text-align: center;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  margin-top: 25%;
+  align-items: center;
+  height: 10%;
+}
+.project-info:hover .text{
+  visibility: visible;
+  opacity: 1;
+}
+.text:hover .project-image{
+  opacity: 0.1;
+}
+.project-info:hover .project-image{
+  opacity: 0.1;
+}
+
+.project-card{
+  
+  border-radius: 10px;
+  color: $dark;
+  
+  background-color: $dark;
+ 
+  overflow: hidden;
+  
+}
+
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proj-btn{
+  margin-top: 20px;
+  
+
+}
+.project-info{
+  position: relative;
+}
+
+.project-image{
+  
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  margin-left: -40px;
+  margin-bottom: -10px;
+  
+}
+.project-image:hover{
+  opacity: 0.1;
+}
+#project-btn{
+  text-decoration: none;
+  color: $dark;
+}
+.ux-section{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#ux-text{
+  width: 75%;
+}
+.top-resume{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stripe{
+  background-color: $primary;
+  width: 70%;
+  height: 40px;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.resume-cols{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.resume-right{
+  margin-left: 60px;
+  
+}
+
+.resume-left{
+  margin-right: 60px;
+  width: 100%;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+.resume-list{
+  list-style: none;
+  
+}
+.resume-list li{
+  margin-top: 10px;
+}
+
+.dec-img{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 120px;
+}
+#contact-section{
+  margin-top: 140px;
+}
+.contact-rows{
+  display: flex;
+ justify-content: space-between;
+ align-items: start;
+  
+}
+.contact-img{
+  
+  
+}
+
+#contact-img{
+  width: 100%;
+  border-radius: 0 10px 10px 0;
+ 
+}
+
+.left{
+  margin-top: -40px;
+  
+  
+}
+.right{
+  width: 65%;
+}
+.smaller{
+  font-size: 48px;
+
+}
+.prim-color{
+  color: $primary;
+}
+.contact-body{
+  width: 45%;
+  margin-left: 60px;
+}
+#thanks-section{
+  text-align: center;
+}
+
+.large-thanks-text{
+  font-size: 180px;
+}
+
+
+
+
+
+
+
+
