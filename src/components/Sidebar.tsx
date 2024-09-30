@@ -58,9 +58,9 @@ function Sidebar() {
 
         <div id="socials">
           <ul id='social-items'>
-          <li><p className='light-body-text'>Instagram</p></li>
-            <li><p className='light-body-text'>Facebook</p></li>
-            <li><p className='light-body-text'>LinkedIn</p></li>
+          <li><a href="https://www.linkedin.com/in/slivengood01/" target="_blank"><i className="fa-brands fa-linkedin fa-2xl"></i></a></li>
+              <li><a href="https://www.instagram.com/boooks.and.sunlight/" target="_blank"><i className="fa-brands fa-square-instagram fa-2xl"></i></a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61559910358447" target="_blank"><i className="fa-brands fa-square-facebook fa-2xl"></i></a></li>
           </ul>
         </div>
      
