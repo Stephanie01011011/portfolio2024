@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
+import { useRef } from 'react'
 
 
 function Welcome() {
+
+  
   return (
     
     <div id="welcome-section">
@@ -11,10 +14,10 @@ function Welcome() {
       <div className="button"><a href="#project-container" className='cta'>Check Out</a></div>
       </div>
       <div id="infobar">
-        <div id="info" style={{marginLeft: 0}}><p className='heading'>Graduated in</p><hr/><h3 className='info-large-text'>2024</h3></div>
-        <div id="info"><p className='heading'>Years Coding</p><hr/><h3 className='info-large-text'>5</h3></div>
-        <div id="info"><p className='heading'>Work experience</p><hr/><h3 className='info-large-text'>2</h3></div>
-        <div id="info"><p className='heading'>Github Repos</p><hr/><h3 className='info-large-text'>40+</h3></div>
+        <div id="info" style={{marginLeft: 0}}><p className='heading'>Graduated in</p><h3 className='info-large-text'>2024</h3></div>
+        <div id="info"><p className='heading'>Years Coding</p><h3 className='info-large-text'>5</h3></div>
+        <div id="info"><p className='heading'>Work experience</p><h3 className='info-large-text'>2</h3></div>
+        <div id="info"><p className='heading'>Github Repos</p><h3 className='info-large-text'>40+</h3></div>
       </div>
     </div>
    

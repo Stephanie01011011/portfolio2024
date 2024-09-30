@@ -5,6 +5,29 @@
   font-family: "Roboto", sans-serif;
 }
 
+.sidebar-item {
+  margin-left: -40px;
+  padding-left: 40px;
+  background-color: #1e1e1e;
+}
+
+.sidebar-item-active {
+  margin-left: -40px;
+  padding-left: 40px;
+  background-color: #BDC1E5;
+}
+
+.sidebar {
+  background-color: #1e1e1e;
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+}
+
+#menu-items a {
+  text-decoration: none;
+}
+
 #logo {
   text-align: right;
   margin-right: 30px;
@@ -25,13 +48,6 @@
   bottom: 0;
   display: flex;
   justify-content: end;
-}
-
-.sidebar {
-  background-color: #1e1e1e;
-  width: 280px;
-  height: 100vh;
-  position: fixed;
 }
 
 .main {
@@ -161,15 +177,15 @@ hr {
 #skill-cards {
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
 }
 
 .skill-header {
   margin: 0;
   background-color: #1e1e1e;
-  font-size: 36px;
+  font-size: 28px;
   font-family: "Dela Gothic One", sans-serif;
   color: #f3f3f3;
   text-align: center;
@@ -213,6 +229,7 @@ hr {
 .answer {
   width: 65%;
   color: #f3f3f3;
+  padding-right: 30px;
 }
 
 #project-section {
@@ -362,7 +379,18 @@ hr {
 .contact-rows {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+}
+
+.icons {
+  display: flex;
+  margin-left: 60px;
+  justify-content: space-between;
+  width: 55%;
+  margin-top: 40px;
+}
+
+.icons a {
+  color: #BDC1E5;
 }
 
 #contact-img {
@@ -370,8 +398,15 @@ hr {
   border-radius: 0 10px 10px 0;
 }
 
+#contact-divider {
+  width: 55%;
+  margin-left: 60px;
+  margin-top: 40px;
+  height: 0;
+}
+
 .left {
-  margin-top: -40px;
+  margin-top: -140px;
 }
 
 .right {
@@ -387,8 +422,39 @@ hr {
 }
 
 .contact-body {
-  width: 45%;
+  width: 50%;
   margin-left: 60px;
+  font-weight: bold;
+}
+
+.bottom-left {
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.bottom-left a {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact-section {
+  background-color: #5D7865;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+}
+
+.phone {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.email {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 #thanks-section {
