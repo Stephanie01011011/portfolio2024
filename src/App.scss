@@ -55,6 +55,12 @@ $secondary: #5D7865;
   display: flex;
   justify-content: end;
 }
+#social-items a{
+  color: $primary;
+}
+#socials{
+  gap: 60px;
+}
 
 .main{
   background-color: $light;
