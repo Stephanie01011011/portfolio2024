@@ -11,13 +11,17 @@
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
+  "homepage": "https://Stephanie01011011.github.io/portfolio2024/",
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", 
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
