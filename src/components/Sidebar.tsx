@@ -17,7 +17,7 @@ function Sidebar() {
     }
     
   return (
-    <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary sidebar">
+    <div className="sidebar">
         <div id="logo">
         <h3 className='logo-header'>Stephanie Livengood</h3>
         <p className='light-body-text'>Full Stack Developer</p>
