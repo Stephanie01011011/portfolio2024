@@ -1,5 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@keyframes appear {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  40% {
+    opacity: 3;
+    scale: 1;
+  }
+  100% {
+    opacity: 3;
+    scale: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(100deg);
+  }
+  30% {
+    transform: rotate(300deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .App {
   display: flex;
   font-family: "Roboto", sans-serif;
@@ -17,6 +45,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  animation: appear 2s linear;
 }
 
 .sidebar-item {
@@ -308,6 +337,8 @@ hr {
 
 #project-section {
   gap: 60px;
+  animation: appear linear;
+  animation-timeline: view();
 }
 
 .project-info {
@@ -398,6 +429,8 @@ hr {
 
 #contact-section {
   margin-top: 140px;
+  animation: rotate linear;
+  animation-timeline: view(auto);
 }
 
 .contact-rows {

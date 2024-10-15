@@ -8,6 +8,39 @@ $primary: #BDC1E5;
 $light: #f3f3f3;
 $secondary: #5D7865;
 
+@keyframes appear {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  40% {
+    opacity: 3;
+    scale: 1;
+  }
+  100%{
+    opacity: 3;
+    scale: 1;
+  }
+}
+
+
+
+@keyframes rotate{
+  0%{
+    transform: rotate(100deg);
+  }
+  30%{
+    transform: rotate(300deg);
+  }
+  60%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+ 
+}
+
 .App {
   display: flex;
   font-family: $body;
@@ -24,6 +57,7 @@ $secondary: #5D7865;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  animation: appear 2s linear;
 }
 .sidebar-item{
   
@@ -139,6 +173,7 @@ $secondary: #5D7865;
   margin-left: 60px;
   
   
+  
 }
 
 
@@ -196,6 +231,7 @@ hr{
   flex-wrap: wrap;
   
   gap: 40px;
+ 
 }
 .skill-header{
   margin: 0;
@@ -308,6 +344,8 @@ hr{
 }
 #project-section{
   gap: 60px;
+  animation: appear linear;
+  animation-timeline: view();
 }
 .project-info{
   position: relative;
@@ -390,6 +428,8 @@ hr{
 }
 #contact-section{
   margin-top: 140px;
+  animation: rotate linear;
+  animation-timeline: view(auto);
 }
 .contact-rows{
   display: flex;
