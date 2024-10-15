@@ -8,10 +8,13 @@ function Welcome() {
   return (
     
     <div id="welcome-section">
+    <div className="sides">
     <div id="welcome-text">
       <h1>Full Stack <br/>Developer</h1>
       <p className='dark-body-text welcome-msg'>My name is Stephanie and I am so glad you’ve made it to my portfolio. As a quick introduction, I started college in 2019 studying informatics with a concentration in human-computer interaction, and have obtained numerous certificates along the way. Please check out the pages of this site to see my projects and learn more about my process.</p>
-      <div className="button"><a href="#project-container" className='cta'>Check Out</a></div>
+      <div className="button"><a href="#project-container" className='cta'>Go To Projects</a></div>
+      </div>
+      <div className="headerimg"></div>
       </div>
       <div id="infobar">
         <div id="info" style={{marginLeft: 0}}><p className='heading'>Graduated in</p><h3 className='info-large-text'>2024</h3></div>

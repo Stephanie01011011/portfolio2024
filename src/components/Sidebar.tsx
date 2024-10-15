@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
 
-function Sidebar() {
+type Props = {
+  item:string;
+  
+  }
+
+function Sidebar(item: Props) {
     const [welcomeActive, setWelcomeActive] = useState(false);
     const [skillsActive, setSkillsActive] = useState(false);
     const [projectsActive, setProjectsActive] = useState(false);
     const [resumeActive, setResumeActive] = useState(false);
     const [contactActive, setContactActive] = useState(false);
-
+    
     let resetItems = () => {
         setWelcomeActive(false);
         setSkillsActive(false);
@@ -16,11 +21,15 @@ function Sidebar() {
         
     }
     
+   
+   
+
   return (
     <div className="sidebar">
         <div id="logo">
         <h3 className='logo-header'>Stephanie Livengood</h3>
         <p className='light-body-text'>Full Stack Developer</p>
+        
         </div>
 
         <div id="menu">
@@ -29,6 +38,7 @@ function Sidebar() {
                 
                 resetItems();
                 setWelcomeActive(true);
+               
                 
             }}><p className='light-body-text'>Welcome</p></li></a>
             <a href="#skills-section"><li id='skills-item' className={skillsActive ? 'sidebar-item-active' : 'sidebar-item'} onClick={() => {
@@ -37,7 +47,7 @@ function Sidebar() {
                 setSkillsActive(true);
                 
             }}><p className='light-body-text'>Skills</p></li></a>
-            <a href="#project-section"><li id='projects-item' className={projectsActive ? 'sidebar-item-active' : 'sidebar-item'} onClick={() => {
+            <a href="#project-container"><li id='projects-item' className={projectsActive ? 'sidebar-item-active' : 'sidebar-item'} onClick={() => {
                 resetItems();
                 setProjectsActive(true);
                 

@@ -5,6 +5,20 @@
   font-family: "Roboto", sans-serif;
 }
 
+.sides {
+  display: flex;
+  align-items: center;
+}
+
+.headerimg {
+  width: 400px;
+  height: 400px;
+  background-image: url(../public/headerimg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .sidebar-item {
   margin-left: -40px;
   padding-left: 40px;
@@ -251,7 +265,7 @@ hr {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #f3f3f3;
+  color: #1e1e1e;
   text-align: center;
   visibility: hidden;
   display: flex;
@@ -278,7 +292,7 @@ hr {
 .project-card {
   border-radius: 10px;
   color: #1e1e1e;
-  background-color: #1e1e1e;
+  background-color: #BDC1E5;
   overflow: hidden;
 }
 

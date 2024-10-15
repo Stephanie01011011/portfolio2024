@@ -12,6 +12,19 @@ $secondary: #5D7865;
   display: flex;
   font-family: $body;
 }
+.sides{
+  display: flex;
+  align-items: center;
+  
+}
+.headerimg{
+  width: 400px;
+  height: 400px;
+  background-image: url(../public/headerimg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 .sidebar-item{
   
   margin-left: -40px;
@@ -125,7 +138,9 @@ $secondary: #5D7865;
   padding: 60px;
   margin-left: 60px;
   
+  
 }
+
 
 h1{
   font-size: 80px;
@@ -247,7 +262,7 @@ hr{
  left: 0;
  right: 0;
  
-  color: $light;
+  color: $dark;
   text-align: center;
   visibility: hidden;
   display: flex;
@@ -273,7 +288,7 @@ hr{
   border-radius: 10px;
   color: $dark;
   
-  background-color: $dark;
+  background-color: $primary;
  
   overflow: hidden;
   
