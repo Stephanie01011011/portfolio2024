@@ -178,21 +178,72 @@ h1 {
 .button {
   width: -moz-max-content;
   width: max-content;
-  padding: 12px 40px 12px 40px;
   background-color: #5D7865;
   border-radius: 35px;
   color: #f3f3f3;
 }
 
-.button-outline {
+.button.border-pop.proj::before {
+  content: "Go To Projects";
   width: -moz-max-content;
   width: max-content;
   padding: 12px 40px 12px 40px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #5D7865;
+  background-color: #5D7865;
   border-radius: 35px;
+  z-index: -1;
+  border: 2px solid #5D7865;
+}
+
+.button.border-pop.ux::before {
+  content: "Go To UX Portfolio";
+  width: -moz-max-content;
+  width: max-content;
+  padding: 12px 40px 12px 40px;
+  background-color: #5D7865;
+  border-radius: 35px;
+  z-index: -1;
+  border: 2px solid #5D7865;
+}
+
+.button.border-pop.proj:hover::before {
+  outline: #BDC1E5;
+  outline-offset: 3px;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+.button.border-pop.ux:hover::before {
+  outline: #BDC1E5;
+  outline-offset: 3px;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+.button-outline {
+  width: -moz-max-content;
+  width: max-content;
   color: #5D7865;
+}
+
+.button-outline.border-pop::before {
+  content: "See Github Repo";
+  color: #5D7865;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 12px 40px 12px 40px;
+  background-color: #f3f3f3;
+  border-radius: 35px;
+  z-index: -1;
+  border: 2px solid #5D7865;
+}
+
+.button-outline.border-pop:hover::before {
+  content: "Go To Repo";
+  background-color: #5D7865;
+  color: #f3f3f3;
+  outline: #BDC1E5;
+  outline-style: solid;
+  outline-width: 3px;
 }
 
 hr {
@@ -323,6 +374,7 @@ hr {
   color: #1e1e1e;
   background-color: #BDC1E5;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .projects {
@@ -374,6 +426,7 @@ hr {
 
 #ux-text {
   width: 75%;
+  margin-bottom: 40px;
 }
 
 .top-resume {

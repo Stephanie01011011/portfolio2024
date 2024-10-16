@@ -187,19 +187,65 @@ h1{
 }
 .button{
   width: max-content;
-  padding: 12px 40px 12px 40px;
   background-color: $secondary;
   border-radius: 35px;
   color: $light;
 }
-.button-outline{
+.button.border-pop.proj::before{
+  content: 'Go To Projects';
   width: max-content;
   padding: 12px 40px 12px 40px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: $secondary;
+  background-color: $secondary;
   border-radius: 35px;
+  z-index: -1;
+  border: 2px solid $secondary;
+  
+}
+.button.border-pop.ux::before{
+  content: 'Go To UX Portfolio';
+  width: max-content;
+  padding: 12px 40px 12px 40px;
+  background-color: $secondary;
+  border-radius: 35px;
+  z-index: -1;
+  border: 2px solid $secondary;
+  
+}
+.button.border-pop.proj:hover::before{
+  outline: $primary;
+  outline-offset: 3px;
+  outline-style: solid;
+  outline-width: 3px;
+}
+.button.border-pop.ux:hover::before{
+  outline: $primary;
+  outline-offset: 3px;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+.button-outline{
+  width: max-content;
   color: $secondary;
+  
+}
+.button-outline.border-pop::before{
+  content: 'See Github Repo';
+  color: $secondary;
+  width: max-content;
+  padding: 12px 40px 12px 40px;
+  background-color: $light;
+  border-radius: 35px;
+  z-index: -1;
+  border: 2px solid $secondary;
+}
+.button-outline.border-pop:hover::before{
+  content: 'Go To Repo';
+  background-color: $secondary;
+  color: $light;
+  outline: $primary;
+  outline-style: solid;
+  outline-width: 3px;
 }
 hr{
   height: 3px;
@@ -327,7 +373,7 @@ hr{
   background-color: $primary;
  
   overflow: hidden;
-  
+  margin-bottom: 10px;
 }
 
 
@@ -377,6 +423,7 @@ hr{
 }
 #ux-text{
   width: 75%;
+  margin-bottom: 40px;
 }
 .top-resume{
   display: flex;
