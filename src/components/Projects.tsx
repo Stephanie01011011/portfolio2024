@@ -23,14 +23,14 @@ function Projects() {
                     
                 </div>
             </a>
-            <div className="button-outline proj-btn border-pop"><a href={proj.github} id='project-btn' target="_blank"></a></div>
+            <a href={proj.github} id='project-btn' target="_blank"><div className="button-outline proj-btn border-pop"></div></a>
             </div>
         ) )}
     </div>
     
     <div className="ux-section">
         <h2 id='ux-text'>Don't forget to check out my UX portfolio as well. Plenty more Designs there for your viewing pleasure :)</h2>
-        <div className="button border-pop ux"><a href="https://sreneelive9.wixsite.com/steph-create" className='cta' target="_blank"></a></div>
+        <a href="https://sreneelive9.wixsite.com/steph-create" className='cta' target="_blank"><div className="button border-pop ux"></div></a>
     </div>
     </div>
     
