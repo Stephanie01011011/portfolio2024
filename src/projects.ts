@@ -6,7 +6,7 @@ interface Project {
     github: string
 }
 
-let projects: Project[] = [{image: "./Assets/Images/starwars.png", title: "Star Wars Adventure", tech: "Typescript, Materials UI, React, HTML, Star Wars API", url: "https://stephanie01011011.github.io/starwars/", github: "https://github.com/Stephanie01011011/starwars"}, 
+let projects: Project[] = [{image: "./Assets/Images/gallery.png", title: "Art Gallery", tech: "JS, React, Art Institute of Chicago API, HTML/CSS", url: "https://stephanie01011011.github.io/gallerywebapp/", github: "https://github.com/Stephanie01011011/gallerywebapp"}, {image: "./Assets/Images/starwars.png", title: "Star Wars Adventure", tech: "Typescript, Materials UI, React, HTML, Star Wars API", url: "https://stephanie01011011.github.io/starwars/", github: "https://github.com/Stephanie01011011/starwars"}, 
     {image: "./Assets/Images/bookstore.png", title: "Book Store", tech: "Node.js, Express, React, HTML/CSS, Render", url: "https://stephanie01011011.github.io/fablefrontend/", github: "https://github.com/Stephanie01011011/fablefrontend"}, 
     {image: "./Assets/Images/workout.png", title: "Exercise Tracker", tech: "Node.js, Express, React, HTML/CSS, Render", url: "https://stephanie01011011.github.io/workoutlog-frontend/", github: "https://github.com/Stephanie01011011/workoutlog"}, 
     {image: "./Assets/Images/voyager.png", title: "Travel Booking Site", tech: "Typescript, Materials UI, React, HTML/CSS", url: "https://stephanie01011011.github.io/travelsite/", github: "https://github.com/Stephanie01011011/travelsite"},

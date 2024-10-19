@@ -337,6 +337,7 @@ hr {
   gap: 20px;
   place-content: center;
   max-width: 1200px;
+  margin-left: 60px;
 }
 
 .text {
@@ -401,7 +402,7 @@ hr {
   -o-object-fit: cover;
      object-fit: cover;
   height: 300px;
-  width: 300px;
+  width: 440px;
   margin-left: -40px;
   margin-bottom: -10px;
 }
