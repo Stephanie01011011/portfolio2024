@@ -582,7 +582,9 @@ hr {
     margin-left: 0;
   }
   .sides {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .headerimg {
@@ -598,12 +600,15 @@ hr {
     margin-bottom: 40px;
   }
   #welcome-text {
+    text-align: center;
+    margin: auto;
     margin-left: 0;
-    width: 70%;
+    width: 80%;
   }
   #infobar {
     display: block;
     width: 75%;
+    margin: 100px auto;
     padding: 20px 0 20px 0;
   }
   #info {
@@ -680,7 +685,20 @@ hr {
     margin-top: 0;
     margin-bottom: 60px;
   }
+  #divider-text {
+    text-align: center;
+    display: block;
+  }
   .text {
     margin-left: 0;
+  }
+  .question {
+    font-size: 32px;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+  .answer {
+    margin: auto;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=App.css.map */
