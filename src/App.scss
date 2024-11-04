@@ -112,7 +112,7 @@ $secondary: #5D7865;
 
 .main{
   background-color: $light;
-  width: 100vw;
+  width: 100%;
   margin-left: 220px;
 }
 
@@ -168,7 +168,7 @@ $secondary: #5D7865;
 }
 #welcome-text{
   background-color: $light;
-  width: 580px;
+  width: 560px;
   padding: 60px;
   margin-left: 60px;
   
@@ -360,10 +360,10 @@ hr{
   opacity: 1;
 }
 .text:hover .project-image{
-  opacity: 0.1;
+  opacity: 0;
 }
 .project-info:hover .project-image{
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .project-card{
@@ -476,8 +476,7 @@ hr{
 }
 #contact-section{
   margin-top: 140px;
-  animation: rotate linear;
-  animation-timeline: view(auto);
+  
 }
 .contact-rows{
   display: flex;
@@ -569,6 +568,138 @@ hr{
   font-size: 180px;
 }
 
+@media only screen and (max-width: 900px){
+  .sidebar{
+    display: none;
+  }
+  .main{
+    width: 100%;
+    margin-left: 0;
+    
+  }
+  .sides{
+    display: block;
+    align-items: center;
+    
+  }
+  .headerimg{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+  #welcome-section{
+    text-align: center;
+  }
+  .button{
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  #welcome-text{
+    margin-left: 0;
+    width: 70%;
+    
+  }
+  #infobar{
+    display: block;
+    width: 75%;
+    padding: 20px 0 20px 0;
+  }
+  #info{
+    margin-left: 0;
+  }
+  .info-large-text{
+    font-size: 26px;
+    
+  }
+  h1{
+    font-size: 64px;
+  }
+  #project-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    place-content: center;
+    max-width: 1200px;
+    margin-left: 0;
+    
+  }
+  #resume-section h2{
+    margin: auto;
+  }
+  .resume-cols{
+    display: block;
+    width: 95%;
+
+  }
+  .stripe{
+    display: none;
+  }
+  .resume-right{
+    margin-left: 20px;
+    
+  }
+  
+  .resume-left{
+    margin-left: 20px;
+   margin-right: 0;
+  }
+  .head{
+    display: block;
+    width: 90%;
+   
+  }
+  .dec-img{
+    width: 90%;
+    height: 160px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .large-thanks-text{
+    font-size: 60px;
+  }
+  .contact-rows{
+    display: block;
+   
+  }
+  
+  #contact-img{
+    display: none;
+  
+  }
+  .left{
+    width: 100%;
+    margin-left: 0;
+    
+    
+  }
+  .contact-body{
+    width: 80%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .smaller{
+    text-align: center;
+  }
+  
+  .section-heading-text{
+    text-align: center;
+    margin: auto;
+    margin-left: 0;
+  }
+  #ux-text{
+    
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  .text{
+   
+     
+     margin-left: 0;
+     
+   }
+  
+ 
+}
 
 
 
