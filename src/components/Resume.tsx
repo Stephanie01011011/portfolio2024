@@ -3,7 +3,7 @@ import React from 'react'
 function Resume() {
   return (
     <div id='resume-section'>
-        <div className="top-resume"><h2 className='section-heading-text'>Resume</h2><div className="stripe"></div></div>
+        <div className="top-resume"><h2 className='section-heading-text' style={{marginTop: "30px"}}>Resume</h2><div className="stripe"></div></div>
         
         <div className="resume-cols">
             <div className="resume-right">
