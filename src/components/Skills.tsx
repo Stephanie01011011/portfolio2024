@@ -16,7 +16,7 @@ function Skills() {
     <h3 id='skill-title'>Backend</h3>
     </div>
   <div className="card-body">
-    <p className="card-text">Node.js, Express, MongoDB, C#, C++, php, Python, JSON, Git, Github, Docker</p>
+    <p className="card-text">ASP.NET Core, C#, MS SQL Server, Dapper, Entity Framework, Microsoft Azure, Node.js, Express, MongoDB, C++, php, Python, JSON, Git, Github, Docker</p>
   </div>
 </div>
       <div className="card" style={{width: "240px"}}>
