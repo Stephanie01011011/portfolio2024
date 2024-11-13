@@ -100,7 +100,6 @@
 
 .main {
   background-color: #f3f3f3;
-  width: 100%;
   margin-left: 220px;
 }
 
@@ -162,9 +161,7 @@
 
 #welcome-text {
   background-color: #f3f3f3;
-  width: 560px;
-  padding: 60px;
-  margin-left: 60px;
+  width: 100%;
 }
 
 h1 {
@@ -586,6 +583,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .headerimg {
     width: 300px;
@@ -594,6 +592,11 @@ hr {
   }
   #welcome-section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   .button {
     margin: auto;
@@ -603,7 +606,12 @@ hr {
     text-align: center;
     margin: auto;
     margin-left: 0;
-    width: 80%;
+    width: 100%;
+    padding-top: 60px;
+  }
+  .welcome-msg {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   #infobar {
     display: block;

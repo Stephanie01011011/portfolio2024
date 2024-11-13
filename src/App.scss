@@ -113,8 +113,9 @@ $secondary: #5D7865;
 
 .main{
   background-color: $light;
-  width: 100%;
+ 
   margin-left: 220px;
+  
 }
 
 .light-body-text{
@@ -150,6 +151,8 @@ $secondary: #5D7865;
 }
 #welcome-section{
   padding-bottom: 40px;
+
+  
   
   
 }
@@ -169,9 +172,11 @@ $secondary: #5D7865;
 }
 #welcome-text{
   background-color: $light;
-  width: 560px;
-  padding: 60px;
-  margin-left: 60px;
+  width: 100%;
+ 
+  
+  //padding: 60px;
+ // margin-left: 60px;
   
   
   
@@ -583,6 +588,8 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    
     
   }
   .headerimg{
@@ -592,6 +599,11 @@ hr{
   }
   #welcome-section{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   .button{
     margin: auto;
@@ -601,9 +613,15 @@ hr{
     text-align: center;
     margin: auto;
     margin-left: 0;
-    width: 80%;
+    width: 100%;
+    padding-top: 60px;
     
     
+    
+  }
+  .welcome-msg{
+    padding-left: 30px;
+    padding-right: 30px;
   }
   #infobar{
     display: block;
